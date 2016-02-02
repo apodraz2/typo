@@ -10,7 +10,5 @@ Feature: Create Category
 
 	  
 	 @ok
-	 Scenario: Create new category
-	   When I create a new category
-	   Then I should be on the new category page
-	   And then I should see the category on categories table
+	 Scenario: When I create new category
+	   Then I should see the category on categories table

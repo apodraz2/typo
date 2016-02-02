@@ -29,7 +29,8 @@ module Helpers
     fill_in 'article__body_and_extended_editor', with: article.body
   end
 
-  def fill_out_category
+  def fill_out_categories
+      click_link('Categories')
     fill_in 'category_name',      with: category.name
     fill_in 'category_permalink', with: category.permalink
   end

@@ -17,9 +17,14 @@ Given /^I am on the new article page$/ do
 end
 
 
-When /^I follow "(.*)$/ do |resource|
-     send "fill_out_#{resource}"
+When /^I follow "Categories"$/ do 
+     send "fill_out_categories"
      click_on_submit_button
+end
+
+When /^I create a new "Category"$/ do
+     
+     
 end
 	
 When /^I change the name of an existing category$/ do
